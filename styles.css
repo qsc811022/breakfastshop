@@ -56,6 +56,12 @@ input {
   font-weight: 800;
 }
 
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
 .nav-links {
   display: flex;
   gap: clamp(12px, 3vw, 28px);
@@ -69,6 +75,41 @@ input {
 .nav-links a:hover,
 .nav-links a:focus {
   opacity: 1;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.social-links a {
+  display: inline-flex;
+  width: 34px;
+  height: 34px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.38);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.social-links a:hover,
+.social-links a:focus {
+  background: rgba(245, 184, 46, 0.95);
+}
+
+.social-links svg {
+  width: 19px;
+  height: 19px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+}
+
+.social-links a[aria-label="Facebook"] svg {
+  fill: currentColor;
+  stroke: none;
 }
 
 .hero {
@@ -157,6 +198,11 @@ input {
   color: #221b10;
 }
 
+.order-link {
+  color: #fff;
+  background: var(--red);
+}
+
 .secondary {
   border: 1px solid rgba(255, 255, 255, 0.52);
   color: #fff;
@@ -177,9 +223,24 @@ input {
 
 .map-facts {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 16px;
   padding-top: 0;
+}
+
+.online-order {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 24px;
+  align-items: center;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.online-order p {
+  max-width: 760px;
+  margin: 14px 0 0;
+  color: var(--muted);
 }
 
 .map-facts article {
@@ -329,6 +390,13 @@ h2 {
   background: #fffdf6;
 }
 
+.review-summary {
+  max-width: 880px;
+  margin: -12px 0 26px;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
 .review-grid h3 {
   margin: 0 0 8px;
 }
@@ -459,6 +527,13 @@ h2 {
   background: var(--green);
 }
 
+.order-platform-button {
+  width: fit-content;
+  margin-top: 14px;
+  color: #fff;
+  background: var(--red);
+}
+
 .info {
   padding-top: 36px;
 }
@@ -482,8 +557,13 @@ h2 {
     grid-template-columns: 1fr;
   }
 
-  .map-facts {
+  .map-facts,
+  .online-order {
     grid-template-columns: 1fr;
+  }
+
+  .online-order .button {
+    width: fit-content;
   }
 
   .menu-grid {
@@ -507,6 +587,13 @@ h2 {
     flex-direction: column;
     gap: 10px;
     padding: 14px 18px;
+  }
+
+  .header-actions {
+    width: 100%;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
   }
 
   .nav-links {
