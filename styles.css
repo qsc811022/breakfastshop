@@ -18,6 +18,10 @@ html {
   scroll-behavior: smooth;
 }
 
+section {
+  scroll-margin-top: 86px;
+}
+
 body {
   margin: 0;
   color: var(--ink);
@@ -192,6 +196,18 @@ input {
   cursor: pointer;
 }
 
+.button:focus-visible,
+.filter-button:focus-visible,
+.order-category-button:focus-visible,
+.order-card:focus-visible,
+.order-page-button:focus-visible,
+.qty-button:focus-visible,
+.nav-links a:focus-visible,
+.social-links a:focus-visible {
+  outline: 3px solid rgba(245, 184, 46, 0.85);
+  outline-offset: 3px;
+}
+
 .button {
   display: inline-flex;
   min-height: 46px;
@@ -295,10 +311,12 @@ h2 {
 
 .filter-button {
   min-height: 38px;
+  border: 1px solid transparent;
   border-radius: 999px;
   padding: 8px 15px;
   color: var(--ink);
   background: #f7ead4;
+  font-weight: 800;
 }
 
 .filter-button.active {
@@ -308,8 +326,8 @@ h2 {
 
 .menu-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(180px, 1fr));
-  gap: 16px;
+  grid-template-columns: repeat(4, minmax(170px, 1fr));
+  gap: 12px;
 }
 
 .menu-item,
@@ -324,10 +342,11 @@ h2 {
 
 .menu-item {
   display: flex;
-  min-height: 168px;
+  min-height: 132px;
   flex-direction: column;
   justify-content: space-between;
-  padding: 20px;
+  gap: 16px;
+  padding: 16px;
 }
 
 .menu-item h3,
@@ -336,6 +355,8 @@ h2 {
 .info h3 {
   margin: 0 0 8px;
   font-size: 1.12rem;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
 }
 
 .menu-item p,
@@ -343,6 +364,7 @@ h2 {
 .info p {
   margin: 0;
   color: var(--muted);
+  line-height: 1.45;
 }
 
 .hours-table {
@@ -366,7 +388,7 @@ h2 {
 
 .price {
   color: var(--red);
-  font-size: 1.32rem;
+  font-size: 1.18rem;
   font-weight: 900;
 }
 
@@ -459,6 +481,7 @@ h2 {
 
 .order-category-button {
   min-height: 36px;
+  border: 1px solid transparent;
   border-radius: 999px;
   padding: 7px 13px;
   color: var(--ink);
@@ -489,6 +512,7 @@ h2 {
   color: var(--ink);
   background: var(--paper);
   text-align: left;
+  transition: border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
 }
 
 .order-card span {
@@ -498,6 +522,11 @@ h2 {
 .order-card-copy {
   display: grid;
   gap: 3px;
+  min-width: 0;
+}
+
+.order-card-copy span {
+  overflow-wrap: anywhere;
 }
 
 .order-card-copy small {
@@ -510,6 +539,7 @@ h2 {
 .order-card:focus {
   border-color: var(--yellow);
   box-shadow: 0 10px 26px rgba(181, 117, 20, 0.16);
+  transform: translateY(-1px);
 }
 
 .order-pagination {
@@ -541,10 +571,25 @@ h2 {
   padding: 20px;
 }
 
+.cart-count {
+  display: inline-flex;
+  min-width: 28px;
+  height: 28px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 6px;
+  border-radius: 999px;
+  color: #fff;
+  background: var(--green);
+  font-size: 0.88rem;
+}
+
 .cart-list {
+  max-height: 420px;
   min-height: 72px;
   margin: 16px 0;
   padding: 0;
+  overflow: auto;
   list-style: none;
 }
 
@@ -559,6 +604,7 @@ h2 {
 
 .cart-row strong {
   color: var(--red);
+  overflow-wrap: anywhere;
 }
 
 .cart-row small,
@@ -687,7 +733,7 @@ h2 {
   }
 
   .hero {
-    min-height: 760px;
+    min-height: 680px;
   }
 
   .hero-overlay {
@@ -704,6 +750,20 @@ h2 {
     padding-bottom: 58px;
   }
 
+  .filters,
+  .order-tabs {
+    flex-wrap: nowrap;
+    margin-inline: -18px;
+    padding: 0 18px 4px;
+    overflow-x: auto;
+    scrollbar-width: thin;
+  }
+
+  .filter-button,
+  .order-category-button {
+    flex: 0 0 auto;
+  }
+
   .section-heading {
     align-items: flex-start;
     flex-direction: column;
@@ -716,7 +776,19 @@ h2 {
   }
 
   .menu-item {
-    min-height: 150px;
+    min-height: 124px;
+  }
+
+  .order-pagination {
+    justify-content: space-between;
+  }
+
+  .order-page-button {
+    flex: 0 0 auto;
+  }
+
+  .cart-list {
+    max-height: 300px;
   }
 
   .site-footer {

@@ -6,6 +6,7 @@ var orderPrevPage = document.getElementById("orderPrevPage");
 var orderNextPage = document.getElementById("orderNextPage");
 var orderPageInfo = document.getElementById("orderPageInfo");
 var cartList = document.getElementById("cartList");
+var cartCount = document.getElementById("cartCount");
 var cartTotal = document.getElementById("cartTotal");
 var clearCart = document.getElementById("clearCart");
 var cart = {};
@@ -212,11 +213,13 @@ function changeQty(name, amount) {
 function renderCart() {
   var names = Object.keys(cart);
   var total = 0;
+  var count = 0;
 
   cartList.innerHTML = "";
 
   if (names.length === 0) {
     cartList.innerHTML = '<li class="empty">尚未加入品項</li>';
+    cartCount.textContent = "0";
     cartTotal.textContent = "$0";
     return;
   }
@@ -224,6 +227,7 @@ function renderCart() {
   names.forEach(function (name) {
     var item = cart[name];
     var subtotal = item.price * item.qty;
+    count += item.qty;
     total += subtotal;
 
     var li = document.createElement("li");
@@ -248,6 +252,7 @@ function renderCart() {
     cartList.appendChild(li);
   });
 
+  cartCount.textContent = count;
   cartTotal.textContent = "$" + total;
 }
 
