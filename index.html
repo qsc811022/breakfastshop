@@ -12,7 +12,7 @@
     <div class="header-actions">
       <nav class="nav-links" aria-label="主要導覽">
         <a href="#menu">菜單</a>
-        <a href="#specials">人氣</a>
+        <a href="#specials">熱門</a>
         <a href="#reviews">評價</a>
         <a href="#visit">資訊</a>
         <a href="#order">點餐</a>
@@ -36,12 +36,12 @@
 
   <main>
     <section class="hero" id="home">
-      <img src="assets/breakfast-hero.png" alt="熱騰騰的台式早餐餐點" class="hero-image">
+      <img src="assets/breakfast-hero.png" alt="早餐漢堡、蛋餅與飲品" class="hero-image">
       <div class="hero-overlay"></div>
       <div class="hero-content">
         <p class="eyebrow">Mama Wang's Breakfast</p>
         <h1>王媽媽早餐店</h1>
-        <p class="hero-text">台北中山區的日常早餐小店，供應蛋餅、漢堡、吐司與現泡飲品。早上快速外帶，也適合坐下來吃一份剛煎好的熱早餐。</p>
+        <p class="hero-text">台北中山區的日常早餐小店，供應漢堡、三明治、果醬吐司、蛋餅、鐵板麵、點心與飲料。早上快速外帶，也適合坐下來吃一份剛煎好的熱早餐。</p>
         <div class="hero-actions">
           <a href="#menu" class="button primary">查看菜單</a>
           <a href="https://iding.tw/store/108762d0" class="button order-link" target="_blank" rel="noopener">線上點餐</a>
@@ -53,18 +53,18 @@
     <section class="section intro">
       <div>
         <p class="section-kicker">Local Breakfast</p>
-        <h2>熟悉的台式早餐，做成每天都想回訪的味道</h2>
+        <h2>熟悉的台式早餐，現點現做，簡單吃得飽。</h2>
       </div>
-      <p>主打現點現做的家常早餐，餐點選擇清楚、出餐節奏快。無論是上班前外帶一份蛋餅，或週末慢慢吃一份套餐，都能找到簡單穩定的選擇。</p>
+      <p>主打現點現做的家常早餐，餐點選擇清楚、出餐節奏快。無論是上班前外帶一份漢堡，或週末慢慢吃一份鐵板麵套餐，都能找到簡單穩定的選擇。</p>
     </section>
 
-    <section class="section map-facts" aria-label="店家重點資訊">
+    <section class="section map-facts" aria-label="店家資訊">
       <article>
         <span>地址</span>
         <strong>台北市中山區中原街 19 號</strong>
       </article>
       <article>
-        <span>價格帶</span>
+        <span>價位</span>
         <strong>約 $1-200</strong>
       </article>
       <article>
@@ -73,15 +73,15 @@
       </article>
       <article>
         <span>線上點餐</span>
-        <strong>支援 iding.tw 預訂</strong>
+        <strong>可至 iding.tw 下單</strong>
       </article>
     </section>
 
     <section class="section online-order">
       <div>
         <p class="section-kicker">Online Order</p>
-        <h2>趕時間時，先線上點餐再取餐</h2>
-        <p>可透過線上平台預先選餐，減少現場等待時間。頁面下方也提供簡易購物車，方便先估算餐點與總金額。</p>
+        <h2>想先點好再取餐，可以直接使用線上點餐。</h2>
+        <p>早餐尖峰時段建議先線上點餐，抵達店面後取餐更省時間。漢堡、蛋餅、鐵板麵和飲料都能快速加入購物車。</p>
       </div>
       <a href="https://iding.tw/store/108762d0" class="button primary" target="_blank" rel="noopener">前往線上點餐</a>
     </section>
@@ -90,72 +90,173 @@
       <div class="section-heading">
         <div>
           <p class="section-kicker">Menu</p>
-          <h2>熱門餐點</h2>
+          <h2>餐點品項</h2>
         </div>
         <div class="filters" aria-label="菜單分類">
           <button class="filter-button active" data-filter="all" type="button">全部</button>
-          <button class="filter-button" data-filter="main" type="button">主食</button>
+          <button class="filter-button" data-filter="burger" type="button">漢堡(含蛋)</button>
+          <button class="filter-button" data-filter="sandwich" type="button">三明治(含蛋)</button>
+          <button class="filter-button" data-filter="toast" type="button">果醬吐司/厚片</button>
+          <button class="filter-button" data-filter="omelet" type="button">蛋餅</button>
+          <button class="filter-button" data-filter="noodle" type="button">鐵板麵</button>
           <button class="filter-button" data-filter="snack" type="button">點心</button>
-          <button class="filter-button" data-filter="drink" type="button">飲品</button>
+          <button class="filter-button" data-filter="drink" type="button">飲料</button>
         </div>
       </div>
 
       <div class="menu-grid">
-        <article class="menu-item" data-category="main">
+        <article class="menu-item" data-category="burger">
           <div>
-            <h3>起司蛋餅</h3>
-            <p>煎到微酥的餅皮，包入滑嫩蛋香與濃郁起司。</p>
+            <h3>蛋堡</h3>
+            <p>煎蛋搭配生菜與漢堡麵包，簡單清爽。</p>
           </div>
-          <span class="price">$45</span>
+          <span class="price">$40起</span>
         </article>
-        <article class="menu-item" data-category="main">
+        <article class="menu-item" data-category="burger">
           <div>
-            <h3>豬排蛋吐司</h3>
-            <p>厚實豬排搭配煎蛋與吐司，是早晨最穩的飽足選擇。</p>
+            <h3>起士蛋漢堡</h3>
+            <p>蛋堡加上起士片，口感更濃郁。</p>
           </div>
-          <span class="price">$65</span>
+          <span class="price">$50起</span>
         </article>
-        <article class="menu-item" data-category="main">
+        <article class="menu-item" data-category="burger">
           <div>
-            <h3>鮪魚玉米蛋餅</h3>
-            <p>鮪魚、玉米與蛋香一起入口，鹹甜平衡。</p>
+            <h3>玉米蛋漢堡</h3>
+            <p>玉米蛋香甜柔軟，適合想吃清爽口味的人。</p>
           </div>
-          <span class="price">$55</span>
+          <span class="price">$50起</span>
         </article>
-        <article class="menu-item" data-category="main">
+        <article class="menu-item" data-category="burger">
           <div>
-            <h3>蔬菜總匯漢堡</h3>
-            <p>清爽生菜、煎蛋與飽滿配料，適合想吃輕一點的早晨。</p>
+            <h3>火腿蛋漢堡</h3>
+            <p>火腿與煎蛋是經典早餐組合。</p>
           </div>
-          <span class="price">$75</span>
+          <span class="price">$55起</span>
         </article>
-        <article class="menu-item" data-category="snack">
+
+        <article class="menu-item" data-category="sandwich">
           <div>
-            <h3>蘿蔔糕</h3>
-            <p>外層煎香、口感軟嫩，搭配醬油膏更對味。</p>
+            <h3>蛋三明治</h3>
+            <p>吐司夾煎蛋與生菜，方便外帶。</p>
           </div>
-          <span class="price">$40</span>
+          <span class="price">$35起</span>
         </article>
+        <article class="menu-item" data-category="sandwich">
+          <div>
+            <h3>火腿蛋三明治</h3>
+            <p>鹹香火腿搭配煎蛋，經典不出錯。</p>
+          </div>
+          <span class="price">$45起</span>
+        </article>
+        <article class="menu-item" data-category="sandwich">
+          <div>
+            <h3>鮪魚蛋三明治</h3>
+            <p>鮪魚沙拉加蛋，份量剛好。</p>
+          </div>
+          <span class="price">$55起</span>
+        </article>
+
+        <article class="menu-item" data-category="toast">
+          <div>
+            <h3>草莓吐司</h3>
+            <p>香甜果醬吐司，適合搭配飲料。</p>
+          </div>
+          <span class="price">$25起</span>
+        </article>
+        <article class="menu-item" data-category="toast">
+          <div>
+            <h3>花生厚片</h3>
+            <p>厚片烤至酥香，抹上濃郁花生醬。</p>
+          </div>
+          <span class="price">$35起</span>
+        </article>
+        <article class="menu-item" data-category="toast">
+          <div>
+            <h3>巧克力厚片</h3>
+            <p>甜口味厚片，簡單又有飽足感。</p>
+          </div>
+          <span class="price">$35起</span>
+        </article>
+
+        <article class="menu-item" data-category="omelet">
+          <div>
+            <h3>原味蛋餅</h3>
+            <p>餅皮煎得微酥，搭配早餐店醬油膏。</p>
+          </div>
+          <span class="price">$30起</span>
+        </article>
+        <article class="menu-item" data-category="omelet">
+          <div>
+            <h3>起士蛋餅</h3>
+            <p>熱煎蛋餅包入起士，鹹香有拉絲感。</p>
+          </div>
+          <span class="price">$45起</span>
+        </article>
+        <article class="menu-item" data-category="omelet">
+          <div>
+            <h3>玉米蛋餅</h3>
+            <p>玉米粒增加甜味與口感。</p>
+          </div>
+          <span class="price">$45起</span>
+        </article>
+        <article class="menu-item" data-category="omelet">
+          <div>
+            <h3>鮪魚蛋餅</h3>
+            <p>鮪魚餡料搭配蛋餅，吃起來更有份量。</p>
+          </div>
+          <span class="price">$55起</span>
+        </article>
+
+        <article class="menu-item" data-category="noodle">
+          <div>
+            <h3>黑胡椒鐵板麵</h3>
+            <p>熱炒麵條拌入黑胡椒醬，香氣明顯。</p>
+          </div>
+          <span class="price">$55起</span>
+        </article>
+        <article class="menu-item" data-category="noodle">
+          <div>
+            <h3>蘑菇鐵板麵</h3>
+            <p>經典蘑菇醬口味，可加蛋更完整。</p>
+          </div>
+          <span class="price">$55起</span>
+        </article>
+
         <article class="menu-item" data-category="snack">
           <div>
             <h3>薯餅</h3>
-            <p>金黃酥脆的小點，適合加進套餐一起吃。</p>
+            <p>外酥內鬆，適合加點一起吃。</p>
           </div>
-          <span class="price">$30</span>
+          <span class="price">$30起</span>
         </article>
+        <article class="menu-item" data-category="snack">
+          <div>
+            <h3>小熱狗</h3>
+            <p>早餐店常見點心，適合分享。</p>
+          </div>
+          <span class="price">$35起</span>
+        </article>
+
         <article class="menu-item" data-category="drink">
           <div>
             <h3>紅茶</h3>
-            <p>經典早餐店紅茶，甜度順口、冰熱皆可。</p>
+            <p>清爽茶香，搭配主餐剛剛好。</p>
           </div>
-          <span class="price">$25</span>
+          <span class="price">$20起</span>
         </article>
         <article class="menu-item" data-category="drink">
           <div>
             <h3>奶茶</h3>
-            <p>茶香搭配奶香，適合配蛋餅或吐司。</p>
+            <p>茶香搭配奶香，是早餐店經典飲品。</p>
           </div>
-          <span class="price">$25</span>
+          <span class="price">$25起</span>
+        </article>
+        <article class="menu-item" data-category="drink">
+          <div>
+            <h3>豆漿</h3>
+            <p>溫順豆香，冷熱皆適合。</p>
+          </div>
+          <span class="price">$25起</span>
         </article>
       </div>
     </section>
@@ -164,24 +265,24 @@
       <div class="section-heading">
         <div>
           <p class="section-kicker">Popular Picks</p>
-          <h2>第一次來可以先點這幾樣</h2>
+          <h2>熱門推薦</h2>
         </div>
       </div>
       <div class="special-grid">
         <article class="special-item">
           <span>01</span>
-          <h3>起司蛋餅</h3>
-          <p>香氣明確、份量剛好，是最不容易出錯的早餐選擇。</p>
+          <h3>起士蛋漢堡</h3>
+          <p>濃郁起士加上煎蛋與漢堡麵包，適合想吃有飽足感的早晨。</p>
         </article>
         <article class="special-item">
           <span>02</span>
-          <h3>豬排蛋吐司加薯餅</h3>
-          <p>鹹香主食加上酥脆點心，適合需要更有飽足感的早晨。</p>
+          <h3>火腿蛋三明治</h3>
+          <p>方便外帶、口味穩定，是上班上課前快速解決早餐的選擇。</p>
         </article>
         <article class="special-item">
           <span>03</span>
-          <h3>蘿蔔糕配紅茶</h3>
-          <p>傳統台式組合，簡單、快速，也很適合外帶。</p>
+          <h3>黑胡椒鐵板麵加蛋</h3>
+          <p>熱騰騰的鐵板麵加上一顆蛋，份量更完整。</p>
         </article>
       </div>
     </section>
@@ -190,22 +291,22 @@
       <div class="section-heading">
         <div>
           <p class="section-kicker">Map Review Focus</p>
-          <h2>顧客評價關注的三個重點</h2>
+          <h2>客人常提到的重點</h2>
         </div>
       </div>
-      <p class="review-summary">店家在 Google Maps 上約 4.5 星。多數顧客會提到餐點穩定、價格親切與取餐方便，適合附近居民與通勤族作為日常早餐選擇。</p>
+      <p class="review-summary">店家在 Google Maps 上約 4.5 星，常見回饋包含餐點選擇多、價格親切、適合快速外帶。</p>
       <div class="review-grid">
         <article>
-          <h3>餐點穩定</h3>
-          <p>蛋餅、吐司與飲品都是熟悉的早餐店品項，容易快速決定。</p>
+          <h3>早餐品項完整</h3>
+          <p>漢堡、三明治、蛋餅、鐵板麵、點心與飲料都有，選擇清楚。</p>
         </article>
         <article>
           <h3>價格好入手</h3>
-          <p>大多餐點落在日常早餐預算內，單點或加點都不會太有負擔。</p>
+          <p>多數餐點落在早餐店常見價位，適合日常回訪。</p>
         </article>
         <article>
-          <h3>位置方便</h3>
-          <p>位在中原街，適合附近上班族、學生與居民早上順路購買。</p>
+          <h3>外帶方便</h3>
+          <p>可用線上點餐先下單，早上尖峰時段更節省等待時間。</p>
         </article>
       </div>
     </section>
@@ -213,32 +314,40 @@
     <section class="section order-section" id="order">
       <div class="order-copy">
         <p class="section-kicker">Order</p>
-        <h2>先試算想點的早餐</h2>
-        <p class="muted">點選餐點加入購物車，系統會即時計算總額。實際訂購請以前往線上點餐平台為準。</p>
+        <h2>快速加入購物車</h2>
+        <p class="muted">下方品項可先試算金額；實際餐點與價格仍以店家線上點餐頁面為準。</p>
         <a href="https://iding.tw/store/108762d0" class="button order-platform-button" target="_blank" rel="noopener">前往正式點餐頁</a>
       </div>
 
       <div class="order-layout">
         <div class="order-menu" aria-label="可加入購物車的餐點">
-          <button class="order-card" data-name="起司蛋餅" data-price="45" type="button">
-            <span>起司蛋餅</span>
-            <strong>$45</strong>
-          </button>
-          <button class="order-card" data-name="豬排蛋吐司" data-price="65" type="button">
-            <span>豬排蛋吐司</span>
-            <strong>$65</strong>
-          </button>
-          <button class="order-card" data-name="蔬菜總匯漢堡" data-price="75" type="button">
-            <span>蔬菜總匯漢堡</span>
-            <strong>$75</strong>
-          </button>
-          <button class="order-card" data-name="蘿蔔糕" data-price="40" type="button">
-            <span>蘿蔔糕</span>
+          <button class="order-card" data-name="蛋堡" data-price="40" type="button">
+            <span>蛋堡</span>
             <strong>$40</strong>
           </button>
-          <button class="order-card" data-name="紅茶" data-price="25" type="button">
-            <span>紅茶</span>
-            <strong>$25</strong>
+          <button class="order-card" data-name="起士蛋漢堡" data-price="50" type="button">
+            <span>起士蛋漢堡</span>
+            <strong>$50</strong>
+          </button>
+          <button class="order-card" data-name="玉米蛋漢堡" data-price="50" type="button">
+            <span>玉米蛋漢堡</span>
+            <strong>$50</strong>
+          </button>
+          <button class="order-card" data-name="火腿蛋漢堡" data-price="55" type="button">
+            <span>火腿蛋漢堡</span>
+            <strong>$55</strong>
+          </button>
+          <button class="order-card" data-name="起士蛋餅" data-price="45" type="button">
+            <span>起士蛋餅</span>
+            <strong>$45</strong>
+          </button>
+          <button class="order-card" data-name="黑胡椒鐵板麵" data-price="55" type="button">
+            <span>黑胡椒鐵板麵</span>
+            <strong>$55</strong>
+          </button>
+          <button class="order-card" data-name="薯餅" data-price="30" type="button">
+            <span>薯餅</span>
+            <strong>$30</strong>
           </button>
           <button class="order-card" data-name="奶茶" data-price="25" type="button">
             <span>奶茶</span>
@@ -247,7 +356,7 @@
         </div>
 
         <aside class="cart" aria-label="點餐購物車">
-          <h3>點餐清單</h3>
+          <h3>購物車</h3>
           <ul id="cartList" class="cart-list">
             <li class="empty">尚未加入餐點</li>
           </ul>
@@ -287,7 +396,7 @@
         </div>
         <div>
           <h3>點餐提醒</h3>
-          <p>營業時間與價格可能依現場或平台資訊調整，出發前可先透過地圖或點餐平台確認。</p>
+          <p>實際供應狀態與價格可能依現場調整，建議以線上點餐頁或店內公告為準。</p>
         </div>
       </div>
     </section>
