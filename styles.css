@@ -710,39 +710,79 @@ h2 {
 
 @media (max-width: 640px) {
   .site-header {
+    position: sticky;
     align-items: flex-start;
     flex-direction: column;
-    gap: 10px;
-    padding: 14px 18px;
+    gap: 8px;
+    padding: 10px 14px;
   }
 
   .header-actions {
     width: 100%;
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 12px;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
   }
 
   .nav-links {
-    width: 100%;
+    flex: 1 1 auto;
     justify-content: flex-start;
-    gap: 16px;
+    gap: 14px;
     overflow-x: auto;
     padding-bottom: 2px;
-    font-size: 0.88rem;
+    font-size: 0.86rem;
+  }
+
+  .social-links {
+    flex: 0 0 auto;
+    gap: 7px;
+  }
+
+  .social-links a {
+    width: 32px;
+    height: 32px;
   }
 
   .hero {
-    min-height: 680px;
+    display: block;
+    min-height: 0;
+    background: #183f3f;
+  }
+
+  .hero-image,
+  .hero-overlay {
+    position: static;
+    width: 100%;
+    height: auto;
+  }
+
+  .hero-image {
+    display: block;
+    aspect-ratio: 1708 / 650;
+    object-fit: contain;
   }
 
   .hero-overlay {
-    background: linear-gradient(180deg, rgba(21, 18, 13, 0.76), rgba(21, 18, 13, 0.36));
+    display: none;
   }
 
   .hero-content {
-    padding-top: 170px;
-    padding-bottom: 76px;
+    max-width: none;
+    padding: 12px 14px 18px;
+    background: #183f3f;
+  }
+
+  .hero-actions {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .hero-actions .button {
+    min-height: 42px;
+    padding: 8px 6px;
+    font-size: 0.88rem;
+    white-space: nowrap;
   }
 
   .section {
@@ -793,5 +833,17 @@ h2 {
 
   .site-footer {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 380px) {
+  .hero-actions {
+    gap: 6px;
+  }
+
+  .hero-actions .button {
+    min-height: 40px;
+    padding-inline: 4px;
+    font-size: 0.8rem;
   }
 }
