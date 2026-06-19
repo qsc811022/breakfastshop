@@ -127,7 +127,7 @@ input {
   position: relative;
   min-height: min(760px, 92vh);
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   overflow: hidden;
 }
 
@@ -144,14 +144,14 @@ input {
 }
 
 .hero-overlay {
-  background: linear-gradient(90deg, rgba(21, 18, 13, 0.76), rgba(21, 18, 13, 0.28), rgba(21, 18, 13, 0.08));
+  background: linear-gradient(180deg, rgba(21, 18, 13, 0.08), rgba(21, 18, 13, 0.24) 62%, rgba(21, 18, 13, 0.48));
 }
 
 .hero-content {
   position: relative;
   z-index: 1;
   max-width: 720px;
-  padding: 130px clamp(20px, 6vw, 72px) 80px;
+  padding: 130px clamp(20px, 6vw, 72px) 112px;
   color: #fff;
 }
 
@@ -742,7 +742,7 @@ h2 {
 
   .hero-content {
     padding-top: 170px;
-    padding-bottom: 64px;
+    padding-bottom: 76px;
   }
 
   .section {
