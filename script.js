@@ -65,7 +65,7 @@ function renderCart() {
   cartList.innerHTML = "";
 
   if (names.length === 0) {
-    cartList.innerHTML = '<li class="empty">尚未選擇餐點</li>';
+    cartList.innerHTML = '<li class="empty">尚未加入餐點</li>';
     cartTotal.textContent = "$0";
     return;
   }
